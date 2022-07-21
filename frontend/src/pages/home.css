@@ -20,6 +20,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: bold;
+  margin: 1rem;
 }
 .buttonStyle2 {
   display: flex;
@@ -28,7 +29,7 @@ body {
   background-color: #111a21;
   position: absolute;
   bottom: 2%;
-  right: 15%;
+  right: 13%;
   height: 4rem;
   width: 15rem;
   color: white;
@@ -36,4 +37,47 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: bold;
+  margin: 1rem;
+}
+.gloButton {
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  z-index: 2;
+}
+@media screen and (max-width: 980px) {
+  .buttonStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111a21;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    height: 2rem;
+    width: 8rem;
+    color: white;
+    border-radius: 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .buttonStyle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111a21;
+    position: absolute;
+    bottom: 2%;
+    right: 20%;
+    height: 2rem;
+    width: 8rem;
+    color: white;
+    border-radius: 5px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }

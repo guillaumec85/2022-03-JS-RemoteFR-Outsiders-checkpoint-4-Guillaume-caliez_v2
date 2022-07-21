@@ -1,4 +1,4 @@
-import React, { Suspense, useContext } from "react";
+import React, { Suspense, useContext, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import api from "@services/api";
 import Bulle from "@components/bulle/Bulle";
@@ -14,17 +14,15 @@ import CurrentPagesContext from "../PagesContexts";
 
 export default function Home() {
   const { pres, setPres } = useContext(CurrentPagesContext);
-  const { count, setCount } = useContext(CurrentPagesContext);
+  const { count } = useContext(CurrentPagesContext);
 
-  const handleclick = () => {
-    setCount((oldCount) => oldCount + 1);
-    api.get(`/api/presentation/${count}`).then((res) => setPres(res.data));
-  };
-  const handleclick2 = () => {
-    setCount((oldCount) => oldCount - 1);
+  useEffect(() => {
+    api
+      .get(`/api/presentation/${count}`)
+      .then((res) => setPres(res.data))
+      .catch((err) => console.error(err));
+  }, [count]);
 
-    api.get(`/api/presentation/${count}`).then((res) => setPres(res.data));
-  };
   return (
     <>
       {/* scene threejs */}
@@ -52,7 +50,7 @@ export default function Home() {
       <PresDetail pres={pres} />
       <Bulle pres={pres} />
       <Nav />
-      <Counter handleclick={handleclick} handleclick2={handleclick2} />
+      <Counter />
     </>
   );
 }

@@ -1,13 +1,13 @@
 import React, {
   createContext,
-  //  useState
+  // useState
 } from "react";
 
 const CurrentPagesContext = createContext();
 
 export function CurrentPagesContextProvider({ children }) {
   // const [pres, setPres] = useState([]);
-  // const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(1);
 
   return (
     <CurrentPagesContext.Provider

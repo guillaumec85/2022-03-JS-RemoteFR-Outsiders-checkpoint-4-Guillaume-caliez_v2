@@ -30,3 +30,42 @@
   padding: 1rem;
   font-weight: bold;
 }
+.gloDetail {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 980px) {
+  .gloTableau {
+    background-color: rgba(255, 250, 250, 0.877);
+    position: absolute;
+    z-index: 2;
+    min-width: 100px;
+    max-width: 400px;
+    max-height: 400px;
+    min-height: 50px;
+    top: 3%;
+    left: 10%;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gloBulle {
+    background-color: rgba(255, 250, 250, 0.89);
+    position: absolute;
+    z-index: 2;
+    max-width: 100px;
+    top: 1%;
+    right: 1%;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .gloDetail {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}

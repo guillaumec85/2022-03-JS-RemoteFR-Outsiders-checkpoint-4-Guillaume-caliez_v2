@@ -6,7 +6,6 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function ModelInterior() {
-  // { ...props }
   const group = useRef();
   const { nodes, materials } = useGLTF("./interior.glb");
   return (

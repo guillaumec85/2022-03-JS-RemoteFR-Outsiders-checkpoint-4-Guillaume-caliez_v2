@@ -91,3 +91,59 @@
 ul {
   list-style: none;
 }
+@media screen and (max-width: 980px) {
+  .buttonStyle4 {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: arial;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transform: rotate(0deg) skewX(0deg) translate(0, 0);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #111a21;
+    color: white;
+    transition: all 0.5s;
+    position: relative;
+    margin-right: 3rem;
+  }
+  .buttonStyle4::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    width: 100px;
+    height: 10px;
+    background: #111a21;
+    transform: skewX(-45deg);
+  }
+  .buttonStyle3 {
+    width: 100px;
+    height: 40px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: arial;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transform: rotate(0deg) skewX(0deg) translate(0, 0);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #111a21;
+    color: white;
+    transition: all 0.5s;
+    position: relative;
+    margin-right: 3rem;
+  }
+  .buttonStyle3::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    width: 100px;
+    height: 10px;
+    background: #111a21;
+    transform: skewX(-45deg);
+  }
+}
