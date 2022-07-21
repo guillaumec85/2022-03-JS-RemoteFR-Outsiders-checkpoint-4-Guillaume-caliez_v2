@@ -1,13 +1,13 @@
 const express = require("express");
 
-const { ItemController } = require("./controllers");
+const { PresController } = require("./controllers");
 
 const router = express.Router();
 
-router.get("/items", ItemController.browse);
-router.get("/items/:id", ItemController.read);
-router.put("/items/:id", ItemController.edit);
-router.post("/items", ItemController.add);
-router.delete("/items/:id", ItemController.delete);
+router.get("/api/presentation", PresController.browse);
+router.get("/api/presentation/:id", PresController.read);
+router.put("/api/presentation/:id", PresController.edit);
+router.post("/api/presentation", PresController.add);
+router.delete("/api/presentation/:id", PresController.delete);
 
 module.exports = router;

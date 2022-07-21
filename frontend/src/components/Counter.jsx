@@ -1,16 +1,15 @@
-import { useState } from "react";
+import React from "react";
 
-export default function Counter() {
-  const [count, setCount] = useState(0);
-
+export default function Counter({ handleclick, handleclick2 }) {
   return (
-    <p>
-      <button
-        type="button"
-        onClick={() => setCount((oldCount) => oldCount + 1)}
-      >
-        count is: {count}
+    <>
+      <button className="buttonStyle" type="button" onClick={handleclick}>
+        <p>Lecture</p>
       </button>
-    </p>
+
+      <button className="buttonStyle2" type="button" onClick={handleclick2}>
+        <p>arrière </p>
+      </button>
+    </>
   );
 }

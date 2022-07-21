@@ -18,5 +18,10 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "husky": "^7.0.0"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.17.1",
+    "@react-three/fiber": "^8.2.0",
+    "three": "^0.142.0"
   }
 }
