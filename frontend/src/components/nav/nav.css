@@ -1,0 +1,93 @@
+.gloNav {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  width: 300px;
+  display: flex;
+}
+.buttonStyle3 {
+  width: 195px;
+  height: 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: arial;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transform: rotate(0deg) skewX(0deg) translate(0, 0);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: #111a21;
+  color: white;
+  transition: all 0.5s;
+  position: relative;
+  margin-right: 3rem;
+}
+.buttonStyle3::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 10px;
+  height: 100%;
+  background: #111a21;
+  transform: skewY(45deg);
+}
+.buttonStyle3::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -5px;
+  width: 195px;
+  height: 10px;
+  background: #111a21;
+  transform: skewX(-45deg);
+}
+.buttonStyle3:hover {
+  transform: rotate(-30deg) skewX(25deg) translate(20px, -20px);
+  box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
+}
+.buttonStyle4 {
+  width: 195px;
+  height: 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: arial;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transform: rotate(0deg) skewX(0deg) translate(0, 0);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: #111a21;
+  color: white;
+  transition: all 0.5s;
+  position: relative;
+  margin-right: 3rem;
+}
+.buttonStyle4::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 10px;
+  height: 100%;
+  background: #111a21;
+  transform: skewY(45deg);
+}
+.buttonStyle4::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -5px;
+  width: 195px;
+  height: 10px;
+  background: #111a21;
+  transform: skewX(-45deg);
+}
+.buttonStyle4:hover {
+  transform: rotate(-30deg) skewX(25deg) translate(20px, -20px);
+  box-shadow: -30px 30px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+}
