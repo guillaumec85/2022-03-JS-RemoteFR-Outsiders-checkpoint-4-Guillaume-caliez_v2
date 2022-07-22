@@ -37,3 +37,7 @@ It's pre-configured with a set of tools which'll help students produce industry-
 MAJ
 
 Using glb files too large for github. you have to download the character and put it at the root of the frontend, as well as the space of the site at these addresses:
+Model.glb : https://1drv.ms/u/s!AjwW4DZAdsHZitw3VL_Oty4yYLIlEg interior.glb
+interior glb : https://1drv.ms/u/s!AjwW4DZAdsHZitw4gfo5TGq-LV0I8Q
+
+mdp: WildCodeSchool!
