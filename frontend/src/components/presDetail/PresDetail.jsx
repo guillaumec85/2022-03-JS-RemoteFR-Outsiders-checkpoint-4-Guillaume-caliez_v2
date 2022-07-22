@@ -10,7 +10,7 @@ function PresDetail({ pres }) {
           <img
             className="imageTableau"
             src="../src/assets/images/cg.png"
-            alt={`${pres.image}`}
+            alt="logo"
           />
         ) : (
           <img

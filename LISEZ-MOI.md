@@ -47,3 +47,14 @@ Vérifications:
 - s'assurer que les principaux outils utilisés lors de la formation sont compatibles avec ce template
 - deploiements ? Compatible avec Netlify/Vercel/Heroku ?
 - fonctionnement avec yarn/pnpm
+
+
+maj
+
+Utilisation de fichiers glb trop volumineux pour github.
+il faut télécharger le personnage et le mettre à la racine du frontend,  ainsi que l'espace du site à ces addresses : 
+
+Model.glb : https://1drv.ms/u/s!AjwW4DZAdsHZitw3VL_Oty4yYLIlEg
+interior.glb
+
+mdp: WildCodeSchool!

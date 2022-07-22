@@ -13,13 +13,12 @@ body {
   position: absolute;
   bottom: 2%;
   right: 2%;
-  height: 4rem;
-  width: 15rem;
+  height: 2rem;
+  width: 10rem;
   color: white;
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  font-weight: bold;
   margin: 1rem;
 }
 .buttonStyle2 {
@@ -29,14 +28,13 @@ body {
   background-color: #111a21;
   position: absolute;
   bottom: 2%;
-  right: 13%;
-  height: 4rem;
-  width: 15rem;
+  right: 15%;
+  height: 2rem;
+  width: 10rem;
   color: white;
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  font-weight: bold;
   margin: 1rem;
 }
 .gloButton {
@@ -47,6 +45,31 @@ body {
   display: flex;
   z-index: 2;
 }
+.gloTitre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.titrePart1 {
+  font-size: 5rem;
+  background-color: #f2f6fa5e;
+  color: #111a21;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.titrePart2 {
+  font-size: 5rem;
+  color: #f3f7fa;
+  background-color: #111a21;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.invisButton {
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+}
+
 @media screen and (max-width: 980px) {
   .buttonStyle {
     display: flex;
@@ -56,13 +79,12 @@ body {
     position: absolute;
     bottom: 2%;
     right: 2%;
-    height: 2rem;
-    width: 8rem;
+    height: 1.5rem;
+    width: 5rem;
     color: white;
     border-radius: 5px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 0.7rem;
   }
   .buttonStyle2 {
     display: flex;
@@ -72,12 +94,11 @@ body {
     position: absolute;
     bottom: 2%;
     right: 20%;
-    height: 2rem;
-    width: 8rem;
+    height: 1.5rem;
+    width: 5rem;
     color: white;
     border-radius: 5px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 0.7rem;
   }
 }

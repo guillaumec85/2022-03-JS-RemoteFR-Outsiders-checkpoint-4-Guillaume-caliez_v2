@@ -47,7 +47,7 @@ function Contact() {
           onSubmit={sendEmail}
           ref={form}
         >
-          <h1>Envoyé moi un message !</h1>
+          <h1>Envoyez moi un message !</h1>
           <input type="text" name="name" placeholder="Nom et prénom" required />
 
           <input

@@ -14,6 +14,7 @@ dist-ssr
 .env
 interior.glb
 Model.glb
+Model2.glb
 
 # Editor directories and files
 .vscode/*

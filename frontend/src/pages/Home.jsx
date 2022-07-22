@@ -1,19 +1,18 @@
 import React, { Suspense, useContext, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import api from "@services/api";
-import Bulle from "@components/bulle/Bulle";
 import Counter from "@components/Counter";
 import Nav from "@components/nav/Nav";
 import Model from "../avatar/Model";
 import ModelInterior from "../components/interior/ModelInterio";
+
 import "./home.css";
-import PresDetail from "../components/presDetail/PresDetail";
 
 import CurrentPagesContext from "../PagesContexts";
-// import { OrbitControls } from '@react-three/drei';
 
 export default function Home() {
-  const { pres, setPres } = useContext(CurrentPagesContext);
+  const { setPres } = useContext(CurrentPagesContext);
   const { count } = useContext(CurrentPagesContext);
 
   useEffect(() => {
@@ -27,9 +26,9 @@ export default function Home() {
     <>
       {/* scene threejs */}
       <Canvas
-        camera={{ position: [0, 0.3, 3.4], fov: 38 }}
+        camera={{ position: [0, 1.3, 3.4], fov: 38 }}
         style={{
-          backgroundColor: "#383e42",
+          backgroundColor: "#c8cdd1",
           width: "100vw",
           height: "100vh",
           position: "relative",
@@ -43,12 +42,10 @@ export default function Home() {
         <Suspense fallback={null}>
           <ModelInterior position={[-0.2, -0.9, 1]} />
         </Suspense>
-        {/* <OrbitControls /> */}
+        <OrbitControls />
       </Canvas>
       {/* FIN scene threejs */}
 
-      <PresDetail pres={pres} />
-      <Bulle pres={pres} />
       <Nav />
       <Counter />
     </>
