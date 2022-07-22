@@ -1,6 +1,6 @@
 import React from "react";
 
-// import "../pages/Home.css";
+import "../pages/home.css";
 
 function Titre() {
   return (

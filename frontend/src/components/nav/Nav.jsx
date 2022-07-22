@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import "./nav.css";
-// import "@pages/Home.css";
-import Contact from "@components/Contact/Contact";
+import "@pages/home.css";
+import Contact from "@components/contact/Contact";
 import Bulle from "@components/bulle/Bulle";
 import Download from "@components/Download";
 import Titre from "@components/Titre";
